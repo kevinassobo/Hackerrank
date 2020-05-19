@@ -20,6 +20,6 @@ model = LinearRegression()
 model.fit(pol.fit_transform(X_train),y_train)
 
 # Prediction
-y_test = model.predict(pol.transform(X_test))
+predictions = model.predict(pol.transform(X_test))
 
-print('\n'.join(list(map(str,y_test))))
+print('\n'.join(list(map(str,predictions))))
